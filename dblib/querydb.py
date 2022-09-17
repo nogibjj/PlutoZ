@@ -2,7 +2,8 @@ from databricks import sql
 import os
 
 
-def querydb(query="SELECT * FROM default.unemployment_analysis_1_csv WHERE unemployment_rate > 10",):
+def querydb(
+    query="SELECT * FROM default.unemployment_analysis_csv LIMIT 5"):
     with sql.connect(
         server_hostname=os.getenv("DATABRICKS_SERVER_HOSTNAME"),
         http_path=os.getenv("DATABRICKS_HTTP_PATH"),

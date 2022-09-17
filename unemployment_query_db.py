@@ -10,7 +10,9 @@ def cli():
 
 # build a click command
 @cli.command()
-@click.option("--unemployment_rate", help="Type in the countries unemployment rate")
+@click.option(
+    "--unemployment_rate", help="Type in the unemployment rate of countries during 1991-2021"
+)
 def cli_query(unemployment_rate):
     """Execute a SQL query"""
     result = querydb(unemployment_rate)
