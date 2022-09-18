@@ -1,6 +1,6 @@
 [![Python application test with Github Actions](https://github.com/nogibjj/PlutoZ/actions/workflows/main.yml/badge.svg)](https://github.com/nogibjj/PlutoZ/actions/workflows/main.yml)
 # Overview
-This project uses the Spark on Databricks to query a dataset (from Kaggle). After connecting the Databricks to the Github codespace, users can query the dataset through CLI and Fastapi. 
+This project uses Spark on Databricks to query a dataset (from Kaggle). After connecting the Databricks to the Github codespace, users can query the dataset through CLI and Fastapi. 
 
 
 # Content
