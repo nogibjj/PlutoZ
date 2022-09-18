@@ -11,11 +11,12 @@ def cli():
 # build a click command
 @cli.command()
 @click.option(
-    "--unemployment_rate", help="Type in the unemployment rate of countries during 1991-2021"
+    "--query", default = "SELECT * FROM default.unemployment_analysis_csv LIMIT 5", 
+    help="Type in the unemployment rate of countries during 1991-2021"
 )
-def cli_query(unemployment_rate):
+def cli_query(query):
     """Execute a SQL query"""
-    result = querydb(unemployment_rate)
+    result = querydb(query)
     click.echo(result)
 
 
